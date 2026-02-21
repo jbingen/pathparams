@@ -1,7 +1,7 @@
 # 🔗 pathparams
 
-[![npm version](https://img.shields.io/npm/v/pathparams)](https://www.npmjs.com/package/pathparams)
-[![npm bundle size](https://img.shields.io/npm/unpacked-size/pathparams)](https://www.npmjs.com/package/pathparams)
+[![npm version](https://img.shields.io/npm/v/@jbingen/pathparams)](https://www.npmjs.com/package/@jbingen/pathparams)
+[![npm bundle size](https://img.shields.io/npm/unpacked-size/@jbingen/pathparams)](https://www.npmjs.com/package/@jbingen/pathparams)
 [![license](https://img.shields.io/github/license/jbingen/pathparams)](https://github.com/jbingen/pathparams/blob/main/LICENSE)
 
 Type-safe path builder and matcher for URL templates.
@@ -9,7 +9,7 @@ Type-safe path builder and matcher for URL templates.
 For anyone tired of hand-rolling `/users/${id}/posts/${postId}` without encoding safety, missing-param checks, or type guarantees.
 
 ```
-npm install pathparams
+npm install @jbingen/pathparams
 ```
 
 ```typescript
@@ -23,7 +23,7 @@ userPost.build({ id: "1", postId: "2" }); // typed, encoded, safe
 Param names are inferred directly from the template string. No manual type annotations needed.
 
 ```typescript
-import { path } from "pathparams";
+import { path } from '@jbingen/pathparams';
 
 const userPost = path("/users/:id/posts/:postId");
 

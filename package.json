@@ -1,5 +1,5 @@
 {
-  "name": "pathparams",
+  "name": "@jbingen/pathparams",
   "version": "0.1.0",
   "description": "Type-safe path builder and matcher for URL templates.",
   "type": "module",
