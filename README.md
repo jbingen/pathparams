@@ -44,7 +44,7 @@ userPost.match("/other/path");
 
 Everyone hand-rolls URL construction with template literals. That works until someone forgets to encode a value, misses a param, or changes a route shape without updating every call site.
 
-pathparams fixes all three in ~70 lines with zero dependencies. The template string is the single source of truth - TypeScript infers the rest.
+pathparams fixes all three with zero dependencies. The template string is the single source of truth - TypeScript infers the rest.
 
 ## API
 
@@ -118,7 +118,7 @@ Early, but stable. The API surface is intentionally small and expected to remain
 
 ## Design decisions
 
-- Zero dependencies. ~70 lines of TypeScript.
+- Zero dependencies. Tiny footprint.
 - Param names inferred from template literals at compile time.
 - Values are stringified, URL-encoded on build, URL-decoded on match.
 - Static segments are regex-escaped for safe matching.
